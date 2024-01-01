@@ -3,12 +3,13 @@ import './Country.css'
 
 const Country = (props) => {
     // const 
-    console.log(props.name.common)
+    // console.log(props.name)
 
     return (
         <div className='country'>
             {/* <p> This is Country component</p> */}
-            <h4>Country Name: {props.name.common}</h4>
+            <p>Country Name: {props.name.common}</p>
+            <img src={props.flag} alt=''></img>
         </div>
     );
 };
